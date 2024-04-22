@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "abe0d942-0d25-400b-a1ff-87f710c27405",
+		"name": "solicitud-afiliacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33541213",
+		"_collection_link": "https://lunar-flare-645364.postman.co/workspace/New-Team-Workspace~35931b49-7802-4907-bbe9-8666c13b6a56/collection/33541213-abe0d942-0d25-400b-a1ff-87f710c27405?action=share&source=collection_link&creator=33541213"
+	},
+	"item": [
+		{
+			"name": "request1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "afiliacion",
+							"value": "{\n  \"fechaSolicitud\": \"2024-04-10T08:00:00Z\",\n  \"fechaGeneracion\": \"2024-04-10T08:00:00Z\",\n  \"tipoInscripcion\": \"empleador nacional\",\n  \"tipoDocumento\": \"Documento 1\",\n  \"cedula\": \"123456789\",\n  \"pasaporte\": \"AB123456\",\n  \"certificadoNacimiento\": \"Certificado 1\",\n  \"ssNo\": \"SSN 123456789\",\n  \"primerNombre\": \"john raul\",\n  \"segundoNombre\": \"Nombre\",\n  \"apellidoPaterno\": \"mejia\",\n  \"apellidoMaterno\": \"Apellido Materno\",\n  \"apellidoCasada\": \"Apellido Casada\",\n  \"sexo\": \"Femenino\",\n  \"salarioBasico\": \"1000\",\n  \"estadoCivil\": \"Casado\",\n  \"direccionResidencia\": \"Direccion Residencia\",\n  \"lugarNacimientoPais\": \"Pais 1\",\n  \"lugarNacimientoProvincia\": \"Provincia 1\",\n  \"lugarNacimientoDistrito\": \"Distrito 1\",\n  \"fechaNacimiento\": \"1990-01-01\",\n  \"nombrePadreCompletoPrimerNombre\": \"Padre Nombre 1\",\n  \"nombrePadreCompletoSegundoNombre\": \"Padre Nombre 2\",\n  \"nombrePadreCompletoApellidoPaterno\": \"Padre Apellido Paterno\",\n  \"nombrePadreCompletoApellidoMaterno\": \"Padre Apellido Materno\",\n  \"nombreMadreCompletoPrimerNombre\": \"Madre Nombre 1\",\n  \"nombreMadreCompletoSegundoNombre\": \"Madre Nombre 2\",\n  \"nombreMadreCompletoApellidoPaterno\": \"Madre Apellido Paterno\",\n  \"nombreMadreCompletoApellidoMaterno\": \"Madre Apellido Materno\",\n  \"nombreMadreCompletoApellidoCasada\": \"Madre Apellido Casada\",\n  \"nombreConyugueCompletoPrimerNombre\": \"Conyugue Nombre 1\",\n  \"nombreConyugueCompletoSegundoNombre\": \"Conyugue Nombre 2\",\n  \"nombreConyugueCompletoApellidoPaterno\": \"Conyugue Apellido Paterno\",\n  \"nombreConyugueCompletoApellidoMaterno\": \"Conyugue Apellido Materno\",\n  \"fechaNacimientoConyugueDia\": \"1990-01-02\",\n  \"fechaUnion\": \"1990-01-03\",\n  \"nombreEmpleador\": \"Empleador 1\",\n  \"numeroEmpleador\": \"12345\",\n  \"direccionEmpresa\": \"Direccion Empresa\",\n  \"telefonoEmpresa\": \"987654321\",\n  \"fechaIngresoTrabajo\": \"1995-01-01\",\n  \"cargoDesempena\": \"Cargo 1\",\n  \"funcionarioVerificadorPrimerNombre\": \"Verificador Nombre 1\",\n  \"funcionarioVerificadorSegundoNombre\": \"Verificador Nombre 2\",\n  \"funcionarioVerificadorApellidoPaterno\": \"Verificador Apellido Paterno\",\n  \"funcionarioVerificadorApellidoMaterno\": \"Verificador Apellido Materno\",\n  \"fechaVerificacionDia\": \"2024-04-10\",\n  \"estadoAfiliacion\": \"Activo\",\n  \"numeroAfiliado\": \"0001\"\n}\n",
+							"type": "text"
+						},
+						{
+							"key": "archivosPDF",
+							"type": "file",
+							"src": "/C:/Users/johnm/Downloads/Directorio Telefonico Agencias y Edificios Administrativos.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9094/afiliaciones/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9094",
+					"path": [
+						"afiliaciones",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
