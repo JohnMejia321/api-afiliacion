@@ -29,8 +29,8 @@ public class AfiliacionController {
         HttpStatus httpStatus;
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            Afiliacion afiliacion = objectMapper.convertValue(payload.get("afiliacion"), Afiliacion.class);
-            List<String> archivosPDFBase64 = (List<String>) payload.get("archivosPDFBase64");
+            Afiliacion afiliacion = objectMapper.convertValue(payload.get("Affiliation"), Afiliacion.class);
+            List<String> archivosPDFBase64 = (List<String>) payload.get("FilesPDFBase64");
             Afiliacion afiliacionGuardada = afiliacionService.guardarAfiliacion(afiliacion, archivosPDFBase64);
             response.put("Status", true);
             response.put("Message", "Afiliación guardada exitosamente");
